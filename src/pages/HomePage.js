@@ -9,7 +9,7 @@ import { useForm } from "react-hook-form";
 import apiService from "../app/apiService";
 import orderBy from "lodash/orderBy";
 import LoadingScreen from "../components/LoadingScreen";
-
+import methods from "../utils/method";
 function HomePage() {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);

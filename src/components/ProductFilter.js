@@ -66,7 +66,15 @@ function ProductFilter({ resetFilter }) {
           type="submit"
           color="inherit"
           variant="outlined"
-          onClick={resetFilter}
+          onClick={() =>
+            resetFilter({
+              gender: [],
+              category: "All",
+              priceRange: "",
+              sortBy: "featured",
+              searchQuery: "",
+            })
+          }
           startIcon={<ClearAllIcon />}
         >
           Clear All
